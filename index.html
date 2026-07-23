@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoardGameGeography 桌游地理学</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/index-BuGVtZxW.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-QCftP-6h.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 开始页 -->
+    <div id="start-screen" class="start-screen">
+      <img class="start-bg" src="./assets/start-bg-BskrOBku.jpg" alt="" loading="eager" decoding="async" />
+      <div class="start-overlay">
+        <h1 class="start-brand">
+          <span class="brand-line">BoardGame</span>
+          <span class="brand-line">Geography</span>
+        </h1>
+        <img class="start-divider-img" src="./assets/divider-decoration-BPB6qAqT.png" alt="" loading="lazy" decoding="async" />
+        <div class="start-buttons">
+          <button class="start-btn-img start-btn-discovery" id="btn-discovery" disabled>
+            <img src="./assets/btn-discovery-D5_Qf3S3.webp" alt="地理大发现模式" loading="lazy" decoding="async" />
+          </button>
+          <button class="start-btn-img start-btn-panorama" id="btn-panorama">
+            <img src="./assets/btn-panorama-igfuTjzn.webp" alt="全景视野模式" loading="lazy" decoding="async" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主界面 -->
+    <div id="main-screen" class="main-screen hidden">
+      <!-- 背景天空 -->
+      <img class="bg-sky" src="./assets/sky-bg-CbQlqRXE.jpg" alt="" loading="eager" decoding="async" />
+
+      <!-- 左上角信息栏 -->
+      <div class="info-panel">
+        <div class="site-brand">
+          <h2 class="brand-title">
+            <span class="brand-line">BoardGame</span>
+            <span class="brand-line">Geography</span>
+          </h2>
+          <p class="brand-desc">桌游地理学，从桌游出发，去探索一座城市、体验一段故事</p>
+        </div>
+        <div class="result-count hidden" id="result-count"></div>
+      </div>
+
+      <!-- 3D 地球容器 -->
+      <div id="globe-container"></div>
+
+      <!-- 详情弹窗 -->
+      <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal-card" id="modal-card">
+          <div class="modal-body">
+            <div class="modal-images">
+              <div class="image-frame">
+                <img id="modal-image" src="" alt="" />
+                <button class="image-nav image-prev hidden" id="image-prev">&#10094;</button>
+                <button class="image-nav image-next hidden" id="image-next">&#10095;</button>
+              </div>
+              <div class="image-dots hidden" id="image-dots"></div>
+            </div>
+            <div class="modal-text">
+              <h3 class="game-name-cn" id="game-name-cn"></h3>
+              <p class="game-name-en" id="game-name-en"></p>
+              <p class="game-location" id="game-location"></p>
+              <div class="text-divider"></div>
+              <div class="game-content" id="game-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 前景装饰 -->
+      <img class="fg-decoration" src="./assets/foreground-BhqA400y.png" alt="" loading="lazy" decoding="async" />
+    </div>
+  </div>
+
+</body>
+</html>
